@@ -1,0 +1,10 @@
+<!doctype html><html><head><meta charset="utf-8"><title>TikTok Auth Callback</title></head>
+<body style="font-family:sans-serif;max-width:640px;margin:60px auto;line-height:1.6;text-align:center">
+<h2>Ma xac thuc TikTok</h2>
+<p>Copy ma duoi day va dan lai cho Claude:</p>
+<textarea id="c" style="width:100%;height:90px;font-size:13px;padding:10px" readonly></textarea>
+<p><button onclick="navigator.clipboard.writeText(document.getElementById('c').value)" style="padding:10px 24px;font-size:15px">Copy</button></p>
+<script>
+const p=new URLSearchParams(location.search);
+document.getElementById('c').value=p.get('code')||('LOI: '+(p.get('error_description')||p.get('error')||'khong co ma'));
+</script></body></html>
