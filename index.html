@@ -1,24 +1,40 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Me Comment Stats</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,640&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-body{margin:0;background:#0f1216;color:#e8ecf4;font-family:-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.65}
-.wrap{max-width:660px;margin:0 auto;padding:72px 24px 60px}
-h1{font-size:34px;margin:0 0 6px;letter-spacing:-.02em}
-.sub{color:#9aa6bc;font-size:16px;margin:0 0 36px}
-.card{background:#151922;border:1px solid #252b38;border-radius:14px;padding:22px 24px;margin-bottom:14px}
-.card h3{margin:0 0 6px;font-size:16px}
-.card p{margin:0;color:#9aa6bc;font-size:14.5px}
-a{color:#7ba7f7}
-footer{margin-top:40px;color:#6b7690;font-size:13px}
+:root{--giay:#FAF7F2;--muc:#26282E;--phu:#6E6A61;--nhan:#2A6B5A;--ke:#E7E1D6}
+*{box-sizing:border-box}
+::selection{background:#DCEAE4;color:#1d3a31}
+body{margin:0;background:var(--giay);color:var(--muc);
+ font:16px/1.7 "Be Vietnam Pro",-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:620px;margin:0 auto;padding:96px 28px 72px}
+h1{font-family:"Fraunces",Georgia,serif;font-weight:640;font-size:46px;line-height:1.08;
+ letter-spacing:-.015em;margin:0 0 18px}
+h1 em{font-style:normal;color:var(--nhan)}
+.lead{font-size:17.5px;color:var(--phu);margin:0 0 44px;max-width:54ch}
+.ke{border:0;border-top:1px solid var(--ke);margin:0 0 40px}
+dl{margin:0 0 48px}
+dt{font-family:"Fraunces",Georgia,serif;font-weight:560;font-size:21px;margin:0 0 6px}
+dd{margin:0 0 30px;color:var(--phu);font-size:15.5px;max-width:58ch}
+dd b{color:var(--muc);font-weight:500}
+a{color:var(--nhan);text-decoration-color:#B9D2C9;text-underline-offset:3px}
+a:hover{text-decoration-color:var(--nhan)}
+a:focus-visible{outline:2px solid var(--nhan);outline-offset:3px;border-radius:2px}
+footer{padding-top:26px;border-top:1px solid var(--ke);color:var(--phu);font-size:13.5px}
+footer .cham{margin:0 10px;color:var(--ke)}
 </style></head><body><div class="wrap">
-<h1>Me Comment Stats</h1>
-<p class="sub">A personal, single-user dashboard for managing the owner's own TikTok channel — built and used exclusively by the owner of @me.comment1.</p>
-<div class="card"><h3>Review &amp; publish original videos</h3>
-<p>Self-created videos are reviewed on a local dashboard, given a caption, and posted to the owner's own TikTok profile via the Content Posting API.</p></div>
-<div class="card"><h3>Private analytics</h3>
-<p>Daily view, like, comment, share and follower statistics for the owner's own videos, fetched via the Display API and stored only on the owner's computer.</p></div>
-<div class="card"><h3>Single user, by design</h3>
-<p>No third-party users, no data collection from anyone else, no engagement automation.</p></div>
-<footer><a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a> · Contact: ai.technify.03@gmail.com</footer>
+<h1>One channel, one owner,<br>one quiet <em>dashboard</em>.</h1>
+<p class="lead">Me Comment Stats is a personal, single-user tool — built and used exclusively by the owner of the TikTok account @me.comment1 to run their own channel.</p>
+<hr class="ke">
+<dl>
+<dt>Review &amp; publish</dt>
+<dd>Self-created videos are reviewed on a local dashboard, given a caption, and posted <b>to the owner's own profile</b> through the TikTok Content Posting API.</dd>
+<dt>Private analytics</dt>
+<dd>Daily views, likes, comments, shares and follower counts for the owner's own videos, fetched via the Display API and stored <b>only on the owner's computer</b>.</dd>
+<dt>Single user, by design</dt>
+<dd>No third-party users, no data collected from anyone else, <b>no engagement automation</b> of any kind.</dd>
+</dl>
+<footer><a href="terms.html">Terms of Service</a><span class="cham">·</span><a href="privacy.html">Privacy Policy</a><span class="cham">·</span>mecomment123@gmail.com</footer>
 </div></body></html>
